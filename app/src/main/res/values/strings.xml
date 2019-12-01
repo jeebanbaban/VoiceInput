@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Voice Input</string>
+
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="tap_on_mic">Tap on mic to speak</string>
+    <string name="dictionary_progress_title">Dictionary</string>
+    <string name="dictionary_progress_msg">Loading…</string>
+    <string name="something_wrong">Something went to wrong!</string>
+    <string name="failed_to_connect_server">Failed to fetch Dictionary</string>
+    <string name="phrase_not_availabe">phrase not found</string>
+    <string name="no_data_found">No Data Found</string>
+
+</resources>

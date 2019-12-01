@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:bind="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="dictionary"
+            type="com.qi.voiceinput.model.Dictionary" />
+
+    </data>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@{dictionary.highlightStatus? @drawable/item_highlighted_bg : @drawable/item_default_bg}"
+            android:layout_margin="@dimen/dp_2"
+            app:cardElevation="@dimen/dp_10">
+
+            <LinearLayout
+                android:id="@+id/llPhrase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/tvWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/sp_15"
+                    android:textColor="@{dictionary.highlightStatus? @color/textHighlightColor : @color/textDefaultColor}"
+                    app:isBold="@{dictionary.highlightStatus}"
+                    android:text="@{dictionary.word}"/>
+
+                <View
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="match_parent"
+                    android:background="@{dictionary.highlightStatus? @color/textHighlightColor : @color/textDefaultColor}"/>
+
+                <TextView
+                    android:id="@+id/tvFrequency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/sp_15"
+                    android:textColor="@{dictionary.highlightStatus? @color/textHighlightColor : @color/textDefaultColor}"
+                    app:isBold="@{dictionary.highlightStatus}"
+                    android:text="@{Integer.toString(dictionary.frequency)}"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>

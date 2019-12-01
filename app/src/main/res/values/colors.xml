@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03a9f4</color>
+    <color name="colorPrimaryDark">#007ac1</color>
+    <color name="colorAccent">#03a9f4</color>
+
+    <color name="itemHighlightColor">#e1f5fe</color>
+    <color name="itemDefaultColor">#ffffff</color>
+
+    <color name="textHighlightColor">#616161</color>
+    <color name="textDefaultColor">#616161</color>
+
+    <color name="colorButton">@color/colorPrimary</color>
+    <color name="colorButtonActive">@color/colorPrimaryDark</color>
+</resources>
