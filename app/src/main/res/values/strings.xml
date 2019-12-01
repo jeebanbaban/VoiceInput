@@ -9,5 +9,16 @@
     <string name="failed_to_connect_server">Failed to fetch Dictionary</string>
     <string name="phrase_not_availabe">phrase not found</string>
     <string name="no_data_found">No Data Found</string>
+    <string name="phrase_not_available">Phrase not available</string>
+    <string name="error_audio">Audio recording problem</string>
+    <string name="error_client">Something wrong from user</string>
+    <string name="error_permission">Insufficient permission</string>
+    <string name="error_network">Network problem</string>
+    <string name="error_ntwrk_timeout">Network timeout</string>
+    <string name="error_no_match">Not match</string>
+    <string name="error_recognizer_busy">Voice recognizer busy</string>
+    <string name="error_server">Something wrong with server</string>
+    <string name="error_speech_timeout">Speech timeout</string>
+    <string name="try_again">Please try again</string>
 
 </resources>

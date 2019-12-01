@@ -5,7 +5,7 @@ android {
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.qi.voiceinput"
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -18,7 +18,7 @@ android {
         }
     }
 
-    dataBinding{
+    dataBinding {
         enabled = true
     }
 }
@@ -35,6 +35,8 @@ dependencies {
     //Support design
     implementation 'com.android.support:design:29.0.0'
     implementation 'com.android.support:recyclerview-v7:29.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.zagum:SpeechRecognitionView:1.2.2'
 
     //Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
